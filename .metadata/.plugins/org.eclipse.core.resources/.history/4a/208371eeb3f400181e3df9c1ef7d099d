@@ -1,0 +1,18 @@
+package com.test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+public class ExtendReportBasicDemo {
+	public static void main(String[] args) {
+		
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extentReports.html");
+		
+		// create ExtentReports and attach reporter(s)
+        ExtentReports extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
+     // creates a toggle for the given test, adds all log events under it    
+        ExtentTest test = extent.createTest("MyFirstTest", "Sample description");
+	}
+
+}

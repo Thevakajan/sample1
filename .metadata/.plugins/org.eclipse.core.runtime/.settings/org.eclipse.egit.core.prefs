@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=C\:\\ec\\Eample\\login\\.git;C\:\\ec\\Eample\\Automation1\\.git;D\:\\.git;
+GitRepositoriesView.GitDirectories.relative=login\\.git;Automation1\\.git;D\:\\.git;
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

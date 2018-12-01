@@ -1,0 +1,65 @@
+package com.test.utitlis;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtitlis {
+	
+	static	String projectPath;
+	static XSSFWorkbook workbook;
+	static XSSFSheet sheet;
+	
+	public ExcelUtitlis(String excelPath,String sheeName) {
+		projectPath =	System.getProperty("user.dir");
+		 workbook = new XSSFWorkbook(projectPath+"\\excel\\data.xlsx");
+		sheet = workbook.getSheet("Sheet1");
+	}
+	public static void main(String[] args) {
+		//getRowCount();
+		// getCellData();
+	//	 getCellDataNumber();
+	}
+	public static void getRowCount() {
+		try {
+
+			 
+			int rowCount  =sheet.getPhysicalNumberOfRows();
+			System.out.println("No of rows: "+rowCount);
+		}
+		catch(Exception exp) {
+			System.out.println(exp.getMessage());
+			System.out.println(exp.getCause());
+			exp.printStackTrace();
+		}
+	}
+	public static void getCellDataString(int rowNum,int colNum) {
+		try {
+			 projectPath =	System.getProperty("user.dir");
+			 workbook = new XSSFWorkbook(projectPath+"\\excel\\data.xlsx");
+			sheet = workbook.getSheet("Sheet1");
+			String cellData= sheet.getRow(rowNum).getCell(colNum).getStringCellValue();
+			System.out.println(cellData);
+		}
+		catch(Exception exp) {
+			System.out.println(exp.getMessage());
+			System.out.println(exp.getCause());
+			exp.printStackTrace();
+		}
+	}
+	
+	public static void getCellDataNumber(int rowNum ,int colNum) {
+		try {
+			 projectPath =	System.getProperty("user.dir");
+			 workbook = new XSSFWorkbook(projectPath+"\\excel\\data.xlsx");
+			sheet = workbook.getSheet("Sheet1");
+			double cellData= sheet.getRow(1).getCell(1).getNumericCellValue();
+			System.out.println(cellData);
+		}
+		catch(Exception exp) {
+			System.out.println(exp.getMessage());
+			System.out.println(exp.getCause());
+			exp.printStackTrace();
+		}
+	}
+
+}

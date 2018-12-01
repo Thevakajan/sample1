@@ -1,0 +1,35 @@
+package org.automation.base;
+
+import java.io.IOException;
+
+import org.automation.utility.Utility;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DriverInstance {
+	public WebDriver driver;
+	public void initiateDriverInstance() throws IOException {
+		if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("chrome"))
+		{
+			  System.setProperty("webdriver.chrome.driver","/Driver/chromedriver.exe ");
+			 driver = new ChromeDriver();
+		}
+		else if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("chrome"))
+		{
+			  System.setProperty("webdriver.chrome.driver","/Driver/chromedriver.exe ");
+			 driver = new ChromeDriver();
+		}
+		else 
+		{
+			  System.setProperty("webdriver.chrome.driver","/Driver/chromedriver.exe ");
+			 driver = new ChromeDriver();
+		}
+		driver.get(Utility.fetchProperty("applicationURL").toString());
+		
+		
+	}
+    public void closeDriverInstance() {
+    	driver.quit();
+    	
+    }
+}

@@ -1,0 +1,42 @@
+package org.automation.testcas;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.automation.assertions.ScreenShort;
+import org.automation.base.DriverInstance;
+import org.automation.page.LoginPage;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+
+
+
+public class LoginValidation extends DriverInstance {
+	
+	@Test(dataProvider="Static")
+	public void LoginValidaion(String uname,String pass) throws Exception{
+		ScreenShort.captureScreenshot(driver, "Login");	
+     LoginPage login= new LoginPage(driver);
+     
+     
+     login.enterUsername(uname);
+     ScreenShort.captureScreenshot(driver, "TxtUserName");	
+     login.enterPassword(pass);
+     ScreenShort.captureScreenshot(driver, "pass");	
+     login.clickbtn();
+	}
+	@DataProvider(name="Static")
+	public Object[][] testDataGenerator() throws Exception
+	{
+		
+//		Object [][] data = {{"Uname1","Pass"},{"Uname2","Pass"},{"Uname3","Pass"}};
+		FileInputStream file = new FileInputStream("./dataxl/testdata.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet loginSheet = workbook.getSheet("Login");
+		int numberOfData= loginSheet.getPhysicalNumberOfRows();
+		Object[][] testData=new Object[numberOfData][2]; 
+	  return null;
+	}
+}

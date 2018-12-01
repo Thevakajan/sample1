@@ -1,0 +1,30 @@
+package org.automation.base;
+
+import java.io.IOException;
+
+import org.automation.utility.Utility;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DriverInstance {
+	public WebDriver driver;
+	public void initiateDriverInstance() throws IOException {
+		if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("chrome"))
+		{
+			 driver = new ChromeDriver();
+		}
+		else if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("chrome"))
+		{
+			 driver = new ChromeDriver();
+		}
+		else(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("chrome"))
+		{
+			 driver = new ChromeDriver();
+		}
+		
+		
+	}
+    public void closeDriverInstance() {
+    	
+    }
+}

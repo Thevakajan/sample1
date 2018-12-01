@@ -1,0 +1,13 @@
+package com.test.utitlis;
+
+public class ExcelDataProvider {
+	
+	public void testData(String excelPath, String SheetName) {
+		ExcelUtitlis excel = new ExcelUtitlis(excelPath,SheetName);
+		int rowCount = excel.getRowCount();
+		int colCount = excel.getColCount();
+		
+		
+	}
+
+}

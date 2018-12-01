@@ -1,0 +1,16 @@
+package com.test;
+
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+public class ExtendReportBasicDemo {
+	public static void main(String[] args) {
+		
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extentReports.html");
+		
+		// create ExtentReports and attach reporter(s)
+        ExtentReports extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
+
+	}
+
+}

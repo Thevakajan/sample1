@@ -1,0 +1,19 @@
+package com.test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+public class ExtendReportBasicDemo {
+	public static void main(String[] args) {
+		
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extentReports.html");
+		
+		// create ExtentReports and attach reporter(s)
+        ExtentReports extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
+     // creates a toggle for the given test, adds all log events under it    
+        ExtentTest test1 = extent.createTest("Google Search MyFirstTest", "this is test to validate google search functionalitiy");
+	}
+
+}

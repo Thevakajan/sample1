@@ -1,0 +1,5 @@
+package org.automation.assertions;
+
+public class ScreenShort {
+
+}

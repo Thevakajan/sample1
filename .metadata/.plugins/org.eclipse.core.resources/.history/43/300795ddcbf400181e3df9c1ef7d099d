@@ -1,0 +1,13 @@
+package com.test.utitlis;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtitlis {
+	
+	public static void getRowCount() {
+		XSSFWorkbook workbook = new XSSFWorkbook();
+		XSSFSheet sheet = workbook.getSheet("sheet1");
+	}
+
+}

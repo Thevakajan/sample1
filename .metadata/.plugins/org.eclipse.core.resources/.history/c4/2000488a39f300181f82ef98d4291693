@@ -1,0 +1,19 @@
+package org.automation.base;
+
+import org.automation.utility.Utility;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DriverInstance {
+	public WebDriver driver;
+	public void initiateDriverInstance() {
+		if(Utility.fetchProperty("").equals("chrome"))
+		{
+			
+		}
+		 driver = new ChromeDriver();
+	}
+    public void closeDriverInstance() {
+    	
+    }
+}

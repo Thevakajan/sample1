@@ -1,0 +1,5 @@
+package datadriver;
+
+public class LoginData {
+
+}

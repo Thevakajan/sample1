@@ -1,0 +1,5 @@
+package org.automation.base;
+
+public class DriverInstance {
+
+}

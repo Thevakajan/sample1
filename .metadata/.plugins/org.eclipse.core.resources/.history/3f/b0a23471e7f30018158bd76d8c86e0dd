@@ -1,0 +1,24 @@
+package org.automation.testcas;
+
+import org.automation.base.DriverInstance;
+import org.automation.page.LoginPage;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+
+public class LoginValidation extends DriverInstance {
+	
+	@Test(dataProvider="Static")
+	public void LoginValidaion(String uname,String pass) throws Exception{
+     LoginPage login= new LoginPage(driver);
+     login.enterUsername(uname);
+     login.enterPassword(pass);
+     login.clickbtn();
+	}
+	@DataProvider(name="Static")
+	public Object testDataGenerator()
+	{
+		Object [][] data = {{"Uname1","Pass"},{"Uname2","Pass"},{"Uname3","Pass"}};
+		return data;
+	}
+}

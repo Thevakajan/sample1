@@ -1,0 +1,13 @@
+package org.automation.testcas;
+
+import org.automation.base.DriverInstance;
+import org.automation.page.LoginPage;
+import org.junit.Test;
+
+public class LoginValidation extends DriverInstance {
+	
+	@Test
+	public void LoginValidation(){
+     LoginPage login= new LoginPage(driver);
+	}
+}

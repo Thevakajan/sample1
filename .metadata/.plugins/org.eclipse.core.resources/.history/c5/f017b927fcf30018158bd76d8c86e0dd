@@ -1,0 +1,24 @@
+package org.automation.sgic.demo.test;
+
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.Map;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+
+
+public class DataXl {
+	private static XSSFWorkbook workbook; 
+    private static XSSFSheet sheet;
+    private static FileInputStream file;
+    
+    
+
+    private Map <String,Integer> headerRow;
+    public static Map<String,ArrayList<String>> testData;
+    private static Logger log = LogManager.getLogger(DataXl.class);
+}

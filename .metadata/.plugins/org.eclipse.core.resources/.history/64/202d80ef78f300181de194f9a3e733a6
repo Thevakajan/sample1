@@ -1,0 +1,15 @@
+package org.automation.page;
+
+public class LoginPage {
+
+	
+	public void enterUsername() {
+		
+	}
+    public void enterPassword() {
+		
+	}
+    public void clickbtn() {
+		
+	}
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="556" started-at="2018-11-26T14:17:12Z" finished-at="2018-11-26T14:17:13Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumberFrameworkRunner.TestRunner@7d9d1a19]" name="feature" class="com.cucumberFrameworkRunner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="556" started-at="2018-11-26T14:17:12Z" finished-at="2018-11-26T14:17:13Z">
+      <class name="com.cucumberFrameworkRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumberFrameworkRunner.TestRunner@7d9d1a19]" name="setUpClass" is-config="true" duration-ms="258" started-at="2018-11-26T19:47:12Z" finished-at="2018-11-26T19:47:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumberFrameworkRunner.TestRunner@7d9d1a19]" name="feature" duration-ms="66" started-at="2018-11-26T19:47:13Z" description="Runs cucumber Features" data-provider="features" finished-at="2018-11-26T19:47:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Title of your feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="testDownClass()[pri:0, instance:com.cucumberFrameworkRunner.TestRunner@7d9d1a19]" name="testDownClass" is-config="true" duration-ms="112" started-at="2018-11-26T19:47:13Z" finished-at="2018-11-26T19:47:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDownClass -->
+      </class> <!-- com.cucumberFrameworkRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

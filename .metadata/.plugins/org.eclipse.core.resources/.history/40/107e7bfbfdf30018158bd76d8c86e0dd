@@ -1,0 +1,12 @@
+package org.automation.sgic.demo.test;
+
+
+
+public class LoginTest {
+	
+	public void testOrangeHRM() {
+		DataXl.readExcelFile(excelFilePath);
+		DataXl.loadData();
+	}
+
+}

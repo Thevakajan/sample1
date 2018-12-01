@@ -1,0 +1,20 @@
+package org.automation.sgic.demo.test;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
+public class BeseTest {
+	 protected static WebDriver driver;
+	  private String browser;
+	  
+	  protected static Properties prop = new Properties();
+//	  private static String screenShotFolderPath = System.getProperty("user.dir") + "\\src\\test\\resources\\screenshots\\";
+//	  private static String reportFolderPath = "\\src\\test\\resources\\results";
+	  
+//	  public static ExtentReports extentReport = new ExtentReports(reportFolderPath);
+//	  public static ExtentTest extentTest;
+}

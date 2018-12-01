@@ -1,0 +1,19 @@
+package org.automation.sgic.demo.test;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
+
+
+
+public class LoginTest  extends BeseTest{
+	private static Logger logger = LogManager.getLogger(LoginTest.class);
+
+	  boolean flag = false;
+	public void testOrangeHRM() {
+		DataXl.readExcelFile(excelFilePath);
+		DataXl.loadData();
+	}
+
+}

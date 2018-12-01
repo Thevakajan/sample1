@@ -1,0 +1,9 @@
+package com.test.utitlis;
+
+public class ExcelUtilsDemo {
+	public static void main(String[] args) {
+		String projectPath =	System.getProperty("user.dir");
+		ExcelUtitlis excel = new ExcelUtitlis(projectPath+"/excel/data.xlsx","");
+	}
+
+}

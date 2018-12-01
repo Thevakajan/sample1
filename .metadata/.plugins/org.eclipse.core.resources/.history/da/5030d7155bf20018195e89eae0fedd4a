@@ -1,0 +1,11 @@
+package datadriver;
+
+import org.testng.annotations.Test;
+
+public class LoginData {
+	@Test
+	public void TestLogin() {
+		
+	}
+
+}

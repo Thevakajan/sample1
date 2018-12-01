@@ -1,0 +1,8 @@
+package org.automation.utility;
+
+public class Utility {
+   
+	public void fetchProperty() {
+		
+	}
+}

@@ -1,0 +1,20 @@
+package org.automation.page;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	
+	public LoginPage( WebDriver driver) {
+		
+	}
+	
+	public void enterUsername(String uname) {
+		
+	}
+    public void enterPassword(String pass) {
+		
+	}
+    public void clickbtn() {
+		
+	}
+}

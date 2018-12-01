@@ -1,0 +1,24 @@
+package com.test.utitlis;
+
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtitlis {
+	
+	public static void getRowCount() {
+		try {
+			
+		
+		XSSFWorkbook workbook = new XSSFWorkbook("C:\\ec\\Eample\\navenautomation\\excel\\data.xlsx");
+		XSSFSheet sheet = workbook.getSheet("sheet1 ");
+		}
+		catch(Exception exp) {
+			System.out.println(exp.getMessage());
+			System.out.println(exp.getCause());
+			System.out.println(exp.printStackTrace());
+		}
+	}
+
+}

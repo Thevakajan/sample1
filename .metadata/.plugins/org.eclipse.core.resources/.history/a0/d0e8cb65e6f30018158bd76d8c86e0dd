@@ -1,0 +1,17 @@
+package org.automation.testcas;
+
+import org.automation.base.DriverInstance;
+import org.automation.page.LoginPage;
+import org.testng.annotations.Test;
+
+
+public class LoginValidation extends DriverInstance {
+	
+	@Test
+	public void LoginValidaion() throws Exception{
+     LoginPage login= new LoginPage(driver);
+     login.enterUsername("0769376936");
+     login.enterPassword("12345678");
+     login.clickbtn();
+	}
+}
